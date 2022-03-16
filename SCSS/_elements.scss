@@ -1,0 +1,39 @@
+@import "_variables.scss";
+
+a {
+    color: $header_color;
+    @include transition(color 0.3s ease);
+    &:hover {
+        color: $gold;
+    }
+}
+
+.dates {
+    border-radius: 0;
+    margin-bottom: 15px;
+    padding: 10px 45px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: $header_color;
+    cursor: default !important;
+    [itemprop="startDate"] {
+        position: relative;
+        margin-left: 15px;
+        &:after {
+            color: #fff;
+            content: "-";
+        }
+    }
+    &:hover {
+        background: $header_color;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .date {
+        position:relative;
+        padding: 5px 15px;
+    }
+}
+

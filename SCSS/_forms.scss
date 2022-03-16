@@ -1,0 +1,33 @@
+@import "_variables.scss";
+
+form {
+    width: 100%;
+    p {
+        display: flex;
+    }
+}
+
+textarea, 
+input[type="email"],
+input[type="text"] {
+    padding: 5px 0;
+    border: none;
+    border-bottom: 1px solid $lightgrey;
+    margin-bottom: 0;
+    resize: none;
+    flex-grow: 4;
+}
+
+label {
+    flex-grow: 1;
+}
+
+abbr[title] {
+    text-decoration: none;
+}
+
+input[type="submit"] {
+    border-radius: 0;
+    padding: 10px 45px;
+    margin-top: 30px;
+}

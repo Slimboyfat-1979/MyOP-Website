@@ -1,0 +1,17 @@
+@mixin vendor-prefix($prefix, $value) {
+    -webkit-#{$prefix}:$value;
+    -moz-#{$prefix}:$value;
+    -o-#{$prefix}:$value;
+    #{$prefix}:$value;
+}
+
+@mixin background-size($size){
+    @include vendor-prefix('background-size', $size);
+}
+
+@mixin transition($transition) {
+    @include vendor-prefix('transition', $transition); 
+}
+
+
+

@@ -1,0 +1,21 @@
+@import "_variables.scss";
+
+#work_experience {
+    margin-top: 60px;
+    padding-bottom: 60px;
+    background: $lightgrey;
+    h2 {
+        border-bottom: 1px solid $text_color;
+    }
+    .experience {
+        padding-bottom: 30px;
+        margin-bottom: 60px;
+        border-bottom: 1px solid $text_color;
+        position: relative;
+        &:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+    }
+}

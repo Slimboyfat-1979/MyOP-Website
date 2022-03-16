@@ -1,0 +1,118 @@
+@import "_mixins.scss";
+@import "_variables.scss";
+
+#hero {
+    background-image: url(../Images/Hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-attachment:fixed;
+    @include background-size(cover);
+}
+
+.container {
+    padding-top: 25vh;
+    img{
+        display: block;
+        width: 15%;
+        border-radius: 50%;
+        border: 8px inset $header_color;
+    }
+    h1{
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        width: 100%;
+    }
+   .subtitle {
+    
+        margin-bottom: 0;
+        color: $gold;
+        letter-spacing: 3.5px;
+        text-transform: uppercase;
+   }
+}
+
+#hero h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+#hero p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+@include media-breakpoint-up(sm) {
+    #hero h1 {
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    #hero h1 {
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    #hero h1 {
+        font-size: 4.5rem;
+        line-height: 5.5rem;
+    }
+}
+
+#menu {
+    border-top: 1px solid $header_color;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    li {
+        position: relative;
+        display: inline-block;
+        a {
+            padding: 25px 5px;
+            display: block;
+            position: relative;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-family: 'Oswald', Arial, sans-serif;
+            font-size: 1em;
+            &:before {
+                margin-right: 10px;
+                color: $header_color;
+                content: '/';
+            }
+        }
+        &:first-child  a:before{
+            display: none;
+        }
+    }
+    .navbar-toggler {
+        border: none;
+    }
+}
+
+#menu.navbar-light .navbar-nav .nav-link {
+    color: $header_color;
+    &:hover {
+        color: $gold;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    #menu {
+        position: relative;
+        border-bottom: 1px solid $header_color;
+        li {
+            a:before {
+                display: none;
+            }
+        }
+    }
+}
+

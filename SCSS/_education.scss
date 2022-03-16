@@ -1,0 +1,28 @@
+#education {
+    padding-bottom: 60px;
+    background: $header_color;
+    color: white !important;
+    
+    h2 {
+        color: white !important;
+        border-bottom: 1px solid $text_color;
+       
+    }
+    .education {
+        color: white;
+        padding-bottom: 30px;
+        margin-bottom: 60px;
+        border-bottom: 1px solid $text_color;
+        position: relative;
+        &:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    .dates {
+        background: white;
+        color: $text_color;
+    }
+}

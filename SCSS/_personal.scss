@@ -1,0 +1,22 @@
+@import "_variables.scss";
+
+#personal_card {
+    padding-left: 0;
+    p {
+        margin-bottom: 0;
+        padding: 10px;
+        border-bottom: 1px solid $lightgrey;
+    }
+}
+
+#blurb {
+    padding-right: 0;
+}
+
+@include media-breakpoint-down(md) {
+    #personal_card,
+    #blurb {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}

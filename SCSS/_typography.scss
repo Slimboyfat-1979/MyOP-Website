@@ -1,0 +1,21 @@
+@import "_variables.scss";
+
+body {
+    font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
+    color: $text_color;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $header_color;
+    font-family: 'Oswald', Arial, sans-serif;
+}
+
+h2 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $lightgrey;
+    width: 100%;
+}
